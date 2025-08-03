@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starbucks </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1><img src="logo.png" alt="Starbucks Logo" class="logo" /> Starbucks</h1>
+      <nav>
+        <button id="menuBtn">☰</button>
+        <ul id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#drinks">Top Drinks</a></li>
+          <li><a href="#seasonal">Seasonal</a></li>
+          <li><a href="#yourOrder">Your Order</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1>Welcome to Starbucks</h1>
+      <p>Freshly brewed moments, every day.</p>
+      <a href="#drinks" class="btn">Explore Drinks</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="about">
+  <h2> About Starbucks</h2>
+  <div class="about-content">
+    <img src="image3.png" alt="Starbucks Store" />
+    <div class="about-text">
+      <p>
+        Starbucks is a global coffeehouse brand known for its cozy atmosphere and handcrafted beverages. 
+        Founded in 1971 in Seattle, it now serves millions of customers every day. With its mission to inspire and nurture the human spirit — one person, one cup, and one neighborhood at a time — Starbucks continues to be the favorite destination for coffee lovers around the world.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <section id="drinks">
+      <h2> Top 3 Drinks</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="image4.png" alt="Caramel Macchiato" />
+          <h3>Caramel Macchiato</h3>
+          <p>Espresso, milk, and caramel drizzle – a sweet favorite.</p>
+        </div>
+        <div class="card">
+          <img src="image5.png" alt="Java Chip Frappuccino" />
+          <h3>Java Chip Frappuccino</h3>
+          <p>Blended coffee with chocolate chips and whipped cream.</p>
+        </div>
+        <div class="card">
+          <img src="image6.png" alt="Cold Brew" />
+          <h3>Cold Brew</h3>
+          <p>Slow-steeped, super smooth, with sweet vanilla cream.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="seasonal">
+      <h2>🎉 Seasonal Favorites</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="image7.png" alt="Pumpkin Spice Latte" />
+          <h3>Pumpkin Spice Latte</h3>
+          <p>A fall classic with warm spices and whipped topping.</p>
+        </div>
+        <div class="card">
+          <img src="image8.png" alt="Strawberry Refresher" />
+          <h3>Strawberry Açaí Refresher</h3>
+          <p>Light and fruity – perfect for sunny days.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="yourOrder">
+      <h2> What's Your Favorite Drink?</h2>
+      <input type="text" id="drinkInput" placeholder="Type your favorite drink..." />
+      <button onclick="submitOrder()">Submit</button>
+      <p id="response"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>starbucks responsive page</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
