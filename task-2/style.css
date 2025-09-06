@@ -1,0 +1,140 @@
+/* ====== Global Styles ====== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: #f5f7fa;
+  color: #333;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #222;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ====== Card Layout ====== */
+.form-section,
+.todo-section {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.form-section:hover,
+.todo-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ====== Inputs & Textarea ====== */
+input,
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #fafafa;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* ====== Main Buttons (Form + Add Task) ====== */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #004090);
+  transform: translateY(-2px);
+}
+button:active {
+  transform: translateY(0);
+}
+
+/* ====== Error Messages ====== */
+.error {
+  color: #e63946;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 500;
+}
+
+/* ====== To-Do List ====== */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+li {
+  background: #f8f9fa;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s, transform 0.2s;
+  border: 1px solid #eee;
+}
+li:hover {
+  background: #eef3ff;
+  transform: scale(1.01);
+}
+
+/* ✅ Compact Remove Button */
+li button {
+  width: auto;
+  background: linear-gradient(135deg, #e63946, #b41f2d);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+li button:hover {
+  background: linear-gradient(135deg, #b41f2d, #8c1722);
+  transform: translateY(-1px);
+}
+li button:active {
+  transform: translateY(0);
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 900px) {
+  body {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
